@@ -93,6 +93,14 @@ img {
     color: var(--color-brand);
 }
 
+
+.custom-button {
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    width: 70px; /* Adjust the width as needed */
+    height: auto; 
+}
 @media (min-width: 992px) {
     .navbar {
         min-height: 100vh;
