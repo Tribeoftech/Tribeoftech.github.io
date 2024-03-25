@@ -161,8 +161,9 @@ img {
 /* about me  */
 
 .card-custom-image img {
-    height: 200px; /* Adjust the height as needed */
-    width: auto; /* This will maintain aspect ratio */
+    height: 100px; /* Adjust the height as needed */
+    width: 400px; /* This will maintain aspect ratio */
+    border-bottom: #eef3db;
   }
   
 .card-custom {
