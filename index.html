@@ -19,7 +19,7 @@
         <div class="container flex-lg-column">
             <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
                 <span class="h3 fw-bold d-block d-lg-none">Alex Justin Dipboye</span>
-                <img src="./assets/images/person.jpg" class="d-none d-lg-block rounded-circle" alt="">
+                <img src="./assets/images/suit.png" class="d-none d-lg-block rounded-circle" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,6 +62,21 @@
     <!-- //NAVBAR -->
 
     <!-- CONTENT WRAPPER -->
+    <style>
+        /* Add custom CSS here */
+        .examples {
+          max-height: 500px;
+          overflow-y: auto;
+        }
+        .examples .col-4 {
+          height: 100%;
+          display: flex;
+          align-items: center;
+        }
+        .examples .col-4 img {
+          max-height: 100%;
+          max-width: 100%;
+        }
     <div id="content-wrapper">
 
         <!-- HOME -->
@@ -137,84 +152,81 @@
         <!-- SERVICES -->
 
         <!-- WORK -->
-        <section id="work" class="full-height px-lg-5">
-            <div class="container">
-
-                <div class="row pb-4" data-aos="fade-up">
-                    <div class="col-lg-8">
-                        <h6 class="text-brand">WORK</h6>
-                        <h1>My Recent Projects</h1>
-                    </div>
-                </div>
-
-                <div class="row gy-4">
-
-                    <div class="col-md-6" data-aos="fade-up">
-                        <div class="card-custom rounded-4 bg-base shadow-effect">
-                            <div class="card-custom-image rounded-4">
-                                <img class="rounded-4" src="./assets/images/models.png" alt="">
-                            </div>
-                            <div class="card-custom-content p-4">
-                                <h4>Winter World Museum</h4>
-                                <p>We decided to delve into the world of 3D models and three.js holds immense potential to bridge the gap between remote audiences and physical museums. <br>
-                                    It's a glimpse into the future of immersive digital experiences, offering a unique and captivating way to engage with the world Around. This project challenged us to weave technical abilities with creativity, resulting in a tapestry of wonderful 3D models and landscapes.
-                                    Three.js: This powerful tool for 3D models and landscapes that brought our vision to life.
-                                    React & Vite.js: This dynamic duo ensured a seamless, lightning-fast web interface, making user interaction a smooth and exciting journey.
-                                    Tailwind CSS: We embraced Tailwind CSS for its elegance and efficiency, crafting a visually pleasing interface without sacrificing scalability.</p>
-                                <a href="https://github.com/Tribeoftech/WinterWonderMuseum.git"class="fa-brands fa-github">Read more</a> 
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-                        <div class="card-custom rounded-4 bg-base shadow-effect">
-                            <div class="card-custom-image rounded-4">
-                                <img class="rounded-4" src="./assets/images/game.png" alt="">
-                            </div>
-                            <div class="card-custom-content p-4">
-                                <h4>Fighting game</h4>
-                                <p>A JavaScript action game with two characters fighting until one win character wins.
-                                    This JavaScript action game features dynamic combat between two characters, demonstrating proficiency in JavaScript, HTML5, and CSS3. My role emphasized technical expertise and contribution to a project that encapsulates interactive and engaging web-based gaming experiences.</p>
-                                <a href="https://github.com/Tribeoftech/st-fightr-Game.git" 
-                                class="fa-brands fa-github">Read more</a>                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-                        <div class="card-custom rounded-4 bg-base shadow-effect">
-                            <div class="card-custom-image rounded-4"> 
-                                <img class="rounded-4" src="./assets/images/shell.jpg" alt="">
-                            </div>
-                            <div class="card-custom-content p-4">
-                                <h4>Simple Unix Shell</h4>
-                                <p>Simple UNIX Shell This Unix shell, implemented in C, provides fundamental command-line functionality, utilizing standard C libraries and system calls. My role in this project not only showcased good practice in string manipulation, system programming concepts, and C programming language but also demonstrated proficiency in project management, ensuring the successful execution of complex system-level tasks. The collaborative nature of these contributions reflects my ability to engage in diverse technical projects within the educational framework of Atlas School.</p>
-                                <a href="https://github.com/Tribeoftech/holbertonschool-simple_shell.git"class="fa-brands fa-github">Read more</a> 
-                            </div>
-                        </div>
-                    </div>
-                    <section id="projects" class="full-height px-lg-5">
-                        <div class="container">
-                          <div class="row gy-4">
-                            -- Winter World Museum -->
-                            <div class="col-md-6" data-aos="fade-up">
-                              <div class="card-custom rounded-4 bg-base shadow-effect">
-                                <div class="card-custom-image rounded-4">
-                                <img class="rounded-4" src="./assets/images/RB.png" alt="">
-                            </div>
-                            <div class="card-custom-content p-4">
-                                <h4>Risky Breakfast</h4
-                                <p>Our first hack sprint project utilizing HTML, CSS and javascipt as a peer team.</p>
-                                <a href="https://github.com/Tribeoftech/RiskyBreakfastHacksprint.git"  class="fa-brands fa-github">Read more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+        <div class="row pb-4" data-aos="fade-up">
+            <div class="col-lg-8">
+              <h6 class="text-brand">WORK</h6>
+              <h1>My Recent Projects</h1>
             </div>
-        </section>
-        <!-- //WORK -->
-
-        <!-- ABOUT -->
+          </div>
+          
+          <div class="row gy-4" id="work">
+            <div class="col-md-6" data-aos="fade-up">
+              <!-- Project 1 -->
+              <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-image rounded-4">
+                </div>
+                <div class="card-custom-content p-4">
+                  <h4>Winter World Museum</h4>
+                  <p>We decided to delve into the world of 3D models and three.js holds immense potential to bridge the gap between remote audiences and physical museums. <br>
+                    It's a glimpse into the future of immersive digital experiences, offering a unique and captivating way to engage with the world Around. This project challenged us to weave technical abilities with creativity, resulting in a tapestry of wonderful 3D models and landscapes.
+                    Three.js: This powerful tool for 3D models and landscapes that brought our vision to life.
+                    React & Vite.js: This dynamic duo ensured a seamless, lightning-fast web interface, making user interaction a smooth and exciting journey.
+                    Tailwind CSS: We embraced Tailwind CSS for its elegance and efficiency, crafting a visually pleasing interface without sacrificing scalability.</p>
+                  <a href="https://github.com/Tribeoftech/WinterWonderMuseum.git" class="fa-brands fa-github">Read more</a>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <!-- Project 2 -->
+              <div class="row gy-4">
+                <div class="col-md-6">
+                  <div class="card-custom rounded-4 bg-base shadow-effect">
+                    <div class="card-custom-image rounded-4">
+                    </div>
+                    <div class="card-custom-content p-4">
+                      <h4>Fighting game</h4>
+                      <p>A JavaScript action game with two characters fighting until one win character wins.
+                          This JavaScript action game features dynamic combat between two characters, demonstrating proficiency in JavaScript, HTML5, and CSS3. My role emphasized technical expertise and contribution to a project that encapsulates interactive and engaging web-based gaming experiences.</p>
+                      <a href="https://github.com/Tribeoftech/st-fightr-Game.git" class="fa-brands fa-github">Read more</a>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="col-md-6">
+                  <div class="card-custom rounded-4 bg-base shadow-effect">
+                    <div class="card-custom-image rounded-4">
+                    </div>
+                    <div class="card-custom-content p-4">
+                      <h4>Simple Unix Shell</h4>
+                      <p>Simple UNIX Shell This Unix shell, implemented in C, provides fundamental command-line functionality, utilizing standard C libraries and system calls. My role in this project not only showcased good practice in string manipulation, system programming concepts, and C programming language but also demonstrated proficiency in project management, ensuring the successful execution of complex system-level tasks. The collaborative nature of these contributions reflects my ability to engage in diverse technical projects within the educational framework of Atlas School.</p>
+                      <a href="https://github.com/Tribeoftech/holbertonschool-simple_shell.git" class="fa-brands fa-github">Read more</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+        <!--WORK-->
+        <div class="col-md-6" data-aos="fade-up">
+            <div class="card-custom rounded-4 bg-base shadow-effect">
+                <div class="card-custom-image rounded-4">
+                    <h1>Examples</h1>
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="assets/images/game.png" alt="Example 1" class="img-fluid">
+                        </div>
+                        <div class="col-4">
+                            <img src="assets/images/models.png" alt="Example 2" class="img-fluid">
+                        </div>
+                        <div class="col-4">
+                            <img src="assets/images/bean1.png" alt="Example 3" class="img-fluid">
+                        </div>
+                        <div class="col-4">
+                            <img src="assets/images/shell.jpg" alt="Example 4" class="img-fluid">
+                        </div>
+        
+          <!-- ABOUT -->
         <section id="about" class="full-height px-lg-5">
             <div class="container">
                 <div class="row pb-4" data-aos="fade-up">
