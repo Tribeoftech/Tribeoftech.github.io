@@ -335,29 +335,35 @@ span {
     font-size: 2rem;
     color: var(--second-bg-color);
 }
-
 .contact {
     min-height: auto;
     padding-bottom: 7rem;
 }
 
-.contact .Contact p {
-    font-weight: bold;
-  }
+/* Make the .contact section large and neon */
+.contact .Contact {
+    text-align: center; /* Center the text */
+}
+
 .contact .Contact h1 {
-    color: #fffd00;
-    text-shadow: 0 0 10px #fffd00, 0 0 20px #fffd00, 0 0 30px #fffd00, 0 0 40px #fffd00, 0 0 50px #fffd00;
-  }
-  .contact .Contact h1 {
-    font-size: 8rem;
-    color: #fffd00;
-    text-shadow: 0 0 10px #fffd00, 0 0 20px #fffd00, 0 0 30px #fffd00, 0 0 40px #fffd00, 0 0 50px #fffd00;
-  }
-  
-  .contact .Contact p {
+    font-size: 4rem;
+    color:rgb(5, 181, 142);
+    text-shadow: 0 0 10px #111b1a, 0 0 20px #192121, 0 0 30px #111919, 0 0 40px #122020, 0 0 50px #0c0c0c;
+}
+
+/* Make the h3 tag bigger and neon */
+.contact .Contact h3 {
+    font-size: 2rem; /* Adjust the size as needed */
+    color: #f7f7f6;
+    margin-top: 2rem; /* Add some space above the h3 */
+}
+
+/* Maintain the existing p styles */
+.contact .Contact p {
     font-size: 4rem;
     font-weight: bold;
-  }
+}
+
 
 .footer {
     display: flex;
