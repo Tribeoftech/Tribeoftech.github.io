@@ -341,25 +341,25 @@ span {
 }
 
 /* Make the .contact section large and neon */
-.contact .Contact {
+.Contact {
     text-align: center; /* Center the text */
 }
 
-.contact .Contact h1 {
+.Contact h1 {
     font-size: 4rem;
     color:rgb(5, 181, 142);
     text-shadow: 0 0 10px #111b1a, 0 0 20px #192121, 0 0 30px #111919, 0 0 40px #122020, 0 0 50px #0c0c0c;
 }
 
 /* Make the h3 tag bigger and neon */
-.contact .Contact h3 {
+.Contact h3 {
     font-size: 2rem; /* Adjust the size as needed */
     color: #f7f7f6;
     margin-top: 2rem; /* Add some space above the h3 */
 }
 
 /* Maintain the existing p styles */
-.contact .Contact p {
+.Contact p {
     font-size: 4rem;
     font-weight: bold;
 }
