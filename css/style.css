@@ -13,7 +13,7 @@
 
 :root {
     --bg-color: #1f242d;
-    --second-bg-color: #56595d;
+    --second-bg-color: #37383a;
     --text-color: #fefefe;
     --main-color: rgb(5, 181, 142);
 }
@@ -271,16 +271,19 @@ span {
     gap: 2.5rem;
 }
 
-.portfolio-container .portfolio-box {
+.portfolio-box {
     position: relative;
     border-radius: 2rem;
     box-shadow: 0 0 1rem var(--bg-color);
     overflow: hidden;
     display: flex;
+    flex-direction: column;
 }
 
 .portfolio-box img {
     width: 100%;
+    height: auto;
+    object-fit: cover;
     transition: .5s ease;
 }
 
@@ -338,46 +341,23 @@ span {
     padding-bottom: 7rem;
 }
 
-.contact h2 {
-    margin-bottom: 3rem;
-}
-
-.contact form {
-    max-width: 70rem;
-    margin: 1rem auto;
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.contact form .input-box {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.contact form .input-box input,
-.contact form textarea {
-    width: 100%;
-    padding: 1.5rem;
-    font-size: 1.6rem;
-    color: var(--text-color);
-    background: var(--second-bg-color);
-    border-radius: .8rem;
-    margin: .7rem 0;
-}
-
-.contact form .input-box input {
-    width: 49%;
-}
-
-.contact form textarea {
-    resize: none;
-}
-
-.contact form .btn {
-    margin-top: 2rem;
-    cursor: pointer;
-}
+.contact .Contact p {
+    font-weight: bold;
+  }
+.contact .Contact h1 {
+    color: #fffd00;
+    text-shadow: 0 0 10px #fffd00, 0 0 20px #fffd00, 0 0 30px #fffd00, 0 0 40px #fffd00, 0 0 50px #fffd00;
+  }
+  .contact .Contact h1 {
+    font-size: 8rem;
+    color: #fffd00;
+    text-shadow: 0 0 10px #fffd00, 0 0 20px #fffd00, 0 0 30px #fffd00, 0 0 40px #fffd00, 0 0 50px #fffd00;
+  }
+  
+  .contact .Contact p {
+    font-size: 4rem;
+    font-weight: bold;
+  }
 
 .footer {
     display: flex;

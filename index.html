@@ -2,212 +2,132 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
 
-    <!-- box icons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- box icons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <!-- custom css -->
-    <link rel="stylesheet" href="css/style.css">
+  <!-- custom css -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- header design -->
-    <header class="header">
-        <a href="#" class="logo">Tribe of Tech</a>
+  <!-- header design -->
+  <header class="header">
+      <a href="#" class="logo">Tribe of Tech</a>
 
-        <div class='bx bx-menu' id="menu-icon"></div>
+      <div class='bx bx-menu' id="menu-icon"></div>
 
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">Tech</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+      <nav class="navbar">
+          <a href="#home" class="active">Home</a>
+          <a href="#about">Tech</a>
+          <a href="#portfolio">Portfolio</a>
+      </nav>
+  </header>
 
-    <!-- home section design -->
-    <section class="home" id="home">
-        <div class="home-img">
-            <img src="images/suit.png" alt="">
-        </div>
-        <div class="home-content">
-            <h1> Hello, Im Alex Dipboye</h1>
-            <h1> A <span class="multiple-text"></span></h1>
-            <p>Tulsa native who enjoys solving problems and working with teams to make goals a reality. I have a background in operations management, team building, problem-solving and most recently adding software engineering to my portfolio. I always enjoy meeting new friends and expanding my network. Let's make an impact on Tulsa together!
-            </p>
-            <br>
-            <a href="https://docs.google.com/document/d/1fQ85ek-huDVYCGzurrkklDERRKbZn7x5DdGrS2Jx7TQ/edit?usp=sharing" class="btn"> Resume</a>
-            <div class="social-media">
-                <a href="https://github.com/tribeoftech"><i class='bx bxl-github'></i></a>
-                <a href="https://www.linkedin.com/in/alexdipboye/"><i class='bx bxl-linkedin'></i></a>
-            </div>
-        </div>
-    </section>
+  <!-- home section design -->
+  <section class="home" id="home">
+      <div class="home-img">
+          <img src="images/suit.png" alt="">
+      </div>
+      <div class="home-content">
+          <h1> Hello, Im Alex Dipboye</h1>
+          <h1> A <span class="multiple-text"></span></h1>
+          <p>Tulsa native who enjoys solving problems and working with teams to make goals a reality. I have a background in operations management, team building, problem-solving and most recently adding software engineering to my portfolio. I always enjoy meeting new friends and expanding my network. Let's make an impact on Tulsa together!
+          </p>
+          <br>
+          <a href="https://docs.google.com/document/d/1B-cwWEkYNcTWmlskWWuHqThz1vHgQglRxcTZ8LoA4bo/edit?usp=sharing" class="btn"> Resume</a>
+          <div class="social-media">
+              <a href="https://github.com/tribeoftech"><i class='bx bxl-github'></i></a>
+              <a href="https://www.linkedin.com/in/alexdipboye/"><i class='bx bxl-linkedin'></i></a>
+          </div>
+      </div>
+  </section>
 
-    <!-- about section design -->
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="images/Default_Computer_technology_0.jpg" alt="">
-        </div>
+  <!-- portfolio section design -->
+  <section class="portfolio" id="portfolio">
+      <h2 class="heading">Latest <span>Projects</span></h2>
 
-        <div class="about-content">
-            <h2 class="heading">Technology I Have <span>Used in Projects and Freelance work.</span></h2>
-            <h3>Languages/Tools/Frameworks</h3>
-            <p></p>
-            <!-- <a href="#" class="btn">Read More</a> -->
-        </div>
-            
-    </section>
-    <section class="about" id="about">
-        <main>
-            <ul class='slider'>
-              <li class='item' style="background-image: url('https://ioflood.com/blog/wp-content/uploads/2023/09/Retrieving-current-directory-in-Python-folder-path-directory-tree-code-logo.jpg')">
-                <div class='content'>
-                  <h2 class='title'>"Python"</h2>
-                  <p class='description'> Lorem ipsum, dolor sit amet consectetur
-                  adipisicing elit. Tempore fuga voluptatum, iure corporis inventore
-                  praesentium nisi. Id laboriosam ipsam enim.  </p>
-                  <button>Read More</button>
-                </div>
-              </li>
-              <li class='item' style="background-image: url('https://play-lh.googleusercontent.com/s4AnA0RrLKhVMKDBSBTjNvPBBK2wQk3-4ZP2RONGxK_VqnMNXWTmPy-6f8J64GxDgyU')">
-                <div class='content'>
-                  <h2 class='title'>"JavaScript"</h2>
-                  <p class='description'> JavaScript is a high-level, dynamic, and versatile programming language that is primarily used to enhance web pages to provide for a more user-friendly experience.  </p>
-                  <button>Read More</button>
-                </div>
-              </li>
-              <li class='item' style="background-image: url('https://buddy.works/guides/covers/test-nodejs-app/share-nodejs-logo.png')">
-                <div class='content'>
-                  <h2 class='title'>"NodeJS"</h2>
-                  <p class='description'> Node.js is a runtime environment for executing JavaScript on the server side. It is built on Chrome's V8 JavaScript engine and is designed to build scalable network applications. Node.js uses an event-driven, non-blocking I/O model, which makes it efficient and lightweight.  </p>
-                  <button>Read More</button>
-                </div>
-              </li>
-              <li class='item' style="background-image: url('https://blog.logrocket.com/wp-content/uploads/2023/10/complete-guide-react-refs.png')">
-                <div class='content'>
-                  <h2 class='title'>"React"</h2>
-                  <p class='description'>
-                    React is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications.
-                  </p>
-                  <button>Read More</button>
-                </div>
-              </li>
-              <li class='item' style="background-image: url('https://miro.medium.com/v2/resize:fit:1400/1*0D9zGIQXQEIZFYD9tpRXgQ.png')">
-                <div class='content'>
-                  <h2 class='title'>"C Programming"</h2>
-                  <p class='description'> C is a low-level language, which means that it provides a high degree of control over the underlying hardware. This makes it a popular choice for system programming, where low-level control is essential.     </p>
-                  <button>Read More</button>
-                </div>
-              </li>
-              <li class='item' style="background-image: url('https://i.pinimg.com/736x/45/8d/5c/458d5c183cf7c7e98354177a14d4a911.jpg')">
-                <div class='content'>
-                  <h2 class='title'>"NoSQL"</h2>
-                  <p class='description'> NoSQL is a type of database management system that is designed to handle and store large volumes of unstructured and semi-structured data. Unlike traditional relational databases that use tables with pre-defined schemas to store data, NoSQL databases use flexible data models that can adapt to changes in data structures and are capable of scaling horizontally to handle growing amounts of data. </p>
-                 
-                </div>
-              </li>
-            </ul>
-            <nav class='nav'>
-              <ion-icon class='btn prev' name="arrow-back-outline"></ion-icon>
-              <ion-icon class='btn next' name="arrow-forward-outline"></ion-icon>
-            </nav>
-          </main>
-          
-          <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-          <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    </section>
-
-    <!-- services section design -->
-    <!--
-    <section class="services" id="services">
-        <h2 class="heading">Our <span>Services</span></h2>
-
-    <!-- portfolio section design -->
-    <section class="portfolio" id="portfolio">
-        <h2 class="heading">Latest <span>Projects</span></h2>
-
-        <div class="portfolio-container">
-            <div class="portfolio-box">
-                <img src="images/Animator.jpg" alt="">
-                <div class="portfolio-layer">
-                    <h4></h4>
-                    <p></p>
-                    <p></p>
-                    <a href="https://github.com"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-            <div class="portfolio-box">
-                <img src="images/MofC.jpg" alt="">
-                <div class="portfolio-layer">
-                    <h4>Museum Of Imagination</h4>
-                    <p>Mock website for a museum that impliments an imursive frontend experience.</p>
-                    <a href="https://github.com"><i class='bx bx-link-external'></i></a>
-                    <a href="https://youtu.be/1D4dYOp_xTk?si=QTWiETAwmikugEsR"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-            <div class="portfolio-box">
-                <img src="images/airbnbclone.jpg" alt="">
-                <div class="portfolio-layer">
-                    <h4>AirBnB Clone</h4>
-                    <p>Clone of the AirBnB website with an implemented backend interface to manage program data.</p>
-                    <a href="https://github.com/Tribeoftech/holbertonschool-AirBnB_clone_v3.git"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-            <div class="portfolio-box">
-                <img src="images/shell.jpg" alt="">
-                <div class="portfolio-layer">
-                    <h4>Simple Shell</h4>
-                    <p>A recreation of a shell with a basic Unix command-line interpretor</p>
-                    <a href="https://github.com/Tribeoftech/holbertonschool-simple_shell.git"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- contact section design -->
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me!</span></h2>
-
-        <form action="#">
-            <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
-            </div>
-            <div class="input-box">
-                <input type="number" placeholder="Mobile Number">
-                <input type="text" placeholder="Email Subject">
-            </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
-        </form>
-    </section>
-
-    <!-- footer design -->
-    <footer class="footer">
-        <div class="footer-text">
-            <p> Alex Dipboye 2024</p>
-        </div>
-
-        <div class="footer-iconTop">
-            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
-        </div>
-    </footer>
+      <div class="portfolio-container">
+          <div class="portfolio-box">
+              <img src="images/earth.png" alt="">
+              <div class="portfolio-layer">
+                  <h4>Galactic</h4>
+                  <p></p>
+                  <p></p>
+                  <a href="https://github.com"><i class='bx bx-link-external'></i></a>
+              </div>
+          </div>
+          <div class="portfolio-box">
+              <img src="images/models.png" alt="">
+              <div class="portfolio-layer">
+                  <h4>Museum Of Imagination</h4>
+                  <p>Mock website for a museum that impliments an imursive frontend experience.</p>
+                  <a href="https://github.com"><i class='bx bx-link-external'></i></a>
+                  <a href="https://youtu.be/1D4dYOp_xTk?si=QTWiETAwmikugEsR"><i class='bx bx-link-external'></i></a>
+              </div>
+          </div>
+          <div class="portfolio-box">
+              <img src="images/airbnbclone.jpg" alt="">
+              <div class="portfolio-layer">
+                  <h4>AirBnB Clone</h4>
+                  <p>Clone of the AirBnB website with an implemented backend interface to manage program data.</p>
+                  <a href="https://github.com/Tribeoftech/holbertonschool-AirBnB_clone_v3.git"><i class='bx bx-link-external'></i></a>
+              </div>
+          </div>
+          <div class="portfolio-box">
+              <img src="images/shell.jpg" alt="">
+              <div class="portfolio-layer">
+                  <h4>Simple Shell</h4>
+                  <p>A recreation of a shell with a basic Unix command-line interpretor</p>
+                  <a href="https://github.com/Tribeoftech/holbertonschool-simple_shell.git"><i class='bx bx-link-external'></i></a>
+              </div>
+          </div>
+      </div>
+</section>
+<!--Languages-->
+<!-- portfolio boxes -->
+</div>
+</section>
 
 
-    <!-- scroll reveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
+<section class="languages">
+<div class="about-content">
+  <h2 class="heading">Technology I Have <span>Used in Projects and Freelance work.</span></h2>
+  <h3>Languages/Tools/Frameworks</h3>
+  <p>HTML & CSS - Typescript -Express.js-JavaScript - jQuery - JSON - ReactJS - Node.js - Vite - Python - C - Swift - MongoDB - MySQL - RESTful API - Docker - Bootstrap - Linux - GitHub - VSCode  - Xcode - Firebase </p>
+</div>
+</section>
 
-    <!-- typed js -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-    <!-- custom js -->
-    <script src="js/script.js"></script>
+<section class="contact">
+<div class=".contact .Contact">
+  <h1>Contact</h1> 
+  <h3>Connect with me on linkedin or feel free to contact me! I love expanding my network!</h3>
+</div>
+
+
+<footer class="footer">
+  <div class="footer-text">
+      <p> Alex Dipboye 2024</p>
+  </div>
+
+  <div class="footer-iconTop">
+      <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+  </div>
+</footer>
+<!-- scroll reveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- typed js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <!-- custom js -->
+  <script src="js/script.js"></script>
 </body>
 
 </html>
