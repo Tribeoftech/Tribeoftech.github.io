@@ -16,6 +16,7 @@
     --second-bg-color: #37383a;
     --text-color: #fefefe;
     --main-color: rgb(5, 181, 142);
+    --highlight-color: teal;
 }
 
 *::selection {
@@ -82,45 +83,15 @@ section {
 .home {
     display: flex;
     justify-content: center;
-    /* align-items: center; */ /* You can comment out or remove this line */
+    align-items: center;
+    flex-direction: column; /* Center elements vertically */
+    text-align: center; /* Center text */
 }
 
 .home-img img {
     width: 30vw;
     border-radius: 12%;
-    margin-right: 20px;
-    margin-top: 10px; /* Adjust the margin-top value as needed */
-}
-
-.about-img img {
-    border-radius: 30%;
-}
-
-@keyframes floatImage {
-    0% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-0.75rem);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
-
-.home-content h3 {
-    font-size: 3.2rem;
-    font-weight: 700;
-}
-
-.home-content h3:nth-of-type(2) {
-    margin-bottom: 2rem;
-}
-
-span {
-    color: var(--main-color);
+    margin: 20px 0;
 }
 
 .home-content h1 {
@@ -130,11 +101,19 @@ span {
 }
 
 .home-content p {
-    font-size: 2.0rem;
-    margin-top: 20rem;
-    width: 180%;
-    margin-left: -75%; /* Center the paragraph */
-    margin-right: auto; /* Center the paragraph */
+    font-size: 2rem;
+    margin-top: 2rem;
+    max-width: 600px; /* Control width */
+    margin-left: auto; /* Center paragraph */
+    margin-right: auto; /* Center paragraph */
+}
+
+.home-content .btn {
+    margin-top: 2rem;
+}
+
+.social-media {
+    margin-top: 2rem;
 }
 
 .social-media a {
@@ -148,7 +127,7 @@ span {
     border-radius: 50%;
     font-size: 2rem;
     color: var(--main-color);
-    margin: 3rem 1.5rem 3rem 0;
+    margin: 0 1rem;
     transition: .5s ease;
 }
 
@@ -282,10 +261,8 @@ span {
 
 .portfolio-box img {
     width: 100%;
-    height: auto;
-    object-fit: cover;
-    transition: .5s ease;
-}
+    height: auto
+
 
 .portfolio-box:hover img {
     transform: scale(1.1);
@@ -335,35 +312,32 @@ span {
     font-size: 2rem;
     color: var(--second-bg-color);
 }
+
 .contact {
     min-height: auto;
     padding-bottom: 7rem;
 }
 
-/* Make the .contact section large and neon */
 .Contact {
     text-align: center; /* Center the text */
 }
 
 .Contact h1 {
     font-size: 4rem;
-    color:rgb(5, 181, 142);
+    color: rgb(5, 181, 142);
     text-shadow: 0 0 10px #111b1a, 0 0 20px #192121, 0 0 30px #111919, 0 0 40px #122020, 0 0 50px #0c0c0c;
 }
 
-/* Make the h3 tag bigger and neon */
 .Contact h3 {
     font-size: 2rem; /* Adjust the size as needed */
     color: #f7f7f6;
     margin-top: 2rem; /* Add some space above the h3 */
 }
 
-/* Maintain the existing p styles */
 .Contact p {
     font-size: 4rem;
     font-weight: bold;
 }
-
 
 .footer {
     display: flex;
@@ -394,279 +368,11 @@ span {
 
 .footer-iconTop a i {
     font-size: 2.4rem;
-    color: var(--second-bg-color);
+    color: var (--second-bg-color);
 }
 
-
-/* BREAKPOINTS */
-@media (max-width: 1200px) {
-    html {
-        font-size: 55%;
-    }
-}
-
-@media (max-width: 991px) {
-    .header {
-        padding: 2rem 3%;
-    }
-
-    section {
-        padding: 10rem 3% 2rem;
-    }
-
-    .footer {
-        padding: 2rem 3%;
-    }
-}
-
-@media (max-width: 879px) {
-    .portfolio-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
-    #menu-icon {
-        display: block;
-    }
-
-    .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        padding: 1rem 3%;
-        background: var(--bg-color);
-        border-top: .1rem solid rgba(0, 0, 0, .2);
-        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
-        display: none;
-    }
-
-    .navbar.active {
-        display: block;
-    }
-
-    .navbar a {
-        display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
-    }
-
-    .home {
-        flex-direction: column;
-    }
-
-    .home-content h3 {
-        font-size: 2.6rem;
-    }
-
-    .home-content h1 {
-        font-size: 5rem;
-    }
-
-    .home-img img {
-        width: 10vw;
-        margin-top: 5rem;
-        margin-bottom: 20rem;
-    }
-
-    .about {
-        flex-direction: column-reverse;
-    }
-
-    .about img {
-        width: 70vw;
-        margin-top: 4rem;
-    }
-}
-
-@media (max-width: 580px) {
-    .portfolio-container {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 450px) {
-    html {
-        font-size: 50%;
-    }
-
-    .contact form .input-box input {
-        width: 100%;
-    }
-
-    .footer {
-        flex-direction: column-reverse;
-    }
-
-    .footer p {
-        text-align: center;
-        margin-top: 2rem;
-    }
-}
-
-@media (max-width: 365px) {
-
-    .home-img img,
-    .about-img img {
-        margin-top: 3rem;
-    }
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    height: 100vh;
-    display: grid;
-    place-items: left;
-    overflow: hidden;
-  }
-  
-  main {
+main {
     position: relative;
     width: 100%;
     height: 100%;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
-  }
-  
-  .item {
-    width: 200px;
-    height: 300px;
-    list-style-type: none;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
-    background-position: center;
-    background-size: cover;
-    border-radius: 20px;
-    box-shadow: 0 20px 30px rgba(255,255,255,0.3) inset;
-    transition: transform 0.1s, left 0.75s, top 0.75s, width 0.75s, height 0.75s;
-  
-    &:nth-child(1), &:nth-child(2) {
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      transform: none;
-      border-radius: 0;
-      box-shadow: none;
-      opacity: 1;
-    }
-  
-    &:nth-child(3) { left: 50%; }
-    &:nth-child(4) { left: calc(50% + 220px); }
-    &:nth-child(5) { left: calc(50% + 440px); }
-    &:nth-child(6) { left: calc(50% + 660px); opacity: 0; }
-  }
-  
-  .content {
-    width: min(30vw,400px);
-    position: absolute;
-    top: 50%;
-    left: 1rem;
-    transform: translateY(-50%);
-    font: 400 0.85rem helvetica,sans-serif;
-    color: white;
-    text-shadow: 0 3px 8px rgba(0,0,0,0.5);
-    opacity: 0;
-    display: none;
-  
-    & .title {
-      font-family: 'arial-black';
-      text-transform: uppercase;
-    }
-  
-    & .description {
-      line-height: 1.7;
-      margin: 1rem 0 1.5rem;
-      font-size: 2.0rem;
-    }
-  
-    & button {
-      width: fit-content;
-      background-color: rgba(0,0,0,0.1);
-      color: white;
-      border: 2px solid white;
-      border-radius: 0.25rem;
-      padding: 0.75rem;
-      cursor: pointer;
-    }
-  }
-  
-  .item:nth-of-type(2) .content {
-    display: block;
-    animation: show 0.75s ease-in-out 0.3s forwards;
-  }
-  
-  @keyframes show {
-    0% {
-      filter: blur(5px);
-      transform: translateY(calc(-50% + 75px));
-    }
-    100% {
-      opacity: 1;
-      filter: blur(0);
-    }
-  }
-  
-  .nav {
-    position: absolute;
-    bottom: 2rem;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 5;
-    user-select: none;
-  
-    & .btn {
-      background-color: rgba(255,255,255,0.5);
-      color: rgba(0,0,0,0.7);
-      border: 2px solid rgba(0,0,0,0.6);
-      margin: 0 0.25rem;
-      padding: 0.75rem;
-      border-radius: 50%;
-      cursor: pointer;
-  
-      &:hover {
-        background-color: rgba(255,255,255,0.3);
-      }
-    }
-  }
-  
-  @media (width > 650px) and (width < 900px) {
-    .content {
-      & .title        { font-size: 1rem; }
-      & .description  { font-size: 0.7rem; }
-      & button        { font-size: 0.7rem; }
-    }
-    .item {
-      width: 160px;
-      height: 270px;
-  
-      &:nth-child(3) { left: 50%; }
-      &:nth-child(4) { left: calc(50% + 170px); }
-      &:nth-child(5) { left: calc(50% + 340px); }
-      &:nth-child(6) { left: calc(50% + 510px); opacity: 0; }
-    }
-  }
-  
-  @media (width < 650px) {
-    .content {
-      & .title        { font-size: 0.9rem; }
-      & .description  { font-size: 0.65rem; }
-      & button        { font-size: 0.7rem; }
-    }
-    .item {
-      width: 130px;
-      height: 220px;
-  
-      &:nth-child(3) { left: 50%; }
-      &:nth-child(4) { left: calc(50% + 140px); }
-      &:nth-child(5) { left: calc(50% + 280px); }
-      &:nth-child(6) { left: calc(50% + 420px); opacity: 0; }
-    }
-  }
+    box-shadow
